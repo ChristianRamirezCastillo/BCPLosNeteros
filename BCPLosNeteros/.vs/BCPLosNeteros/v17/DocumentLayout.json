@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|c:\\__fuentes\\newhorizont\\codigoseguronet\\bcplosneteros\\bcplosneteros\\losneteros.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|solutionrelative:losneteros.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|c:\\__fuentes\\newhorizont\\codigoseguronet\\bcplosneteros\\bcplosneteros\\losneteros.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|solutionrelative:losneteros.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|c:\\__fuentes\\newhorizont\\codigoseguronet\\bcplosneteros\\bcplosneteros\\losneteros.web\\controllers\\clientebcpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|solutionrelative:losneteros.web\\controllers\\clientebcpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|c:\\__fuentes\\newhorizont\\codigoseguronet\\bcplosneteros\\bcplosneteros\\losneteros.web\\views\\clientebcp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C0C1EC9-0BBF-4121-99FB-A56F1FFE3EEA}|LosNeteros.Web\\LosNeteros.Web.csproj|solutionrelative:losneteros.web\\views\\clientebcp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "LosNeteros.Web\\appsettings.json",
+              "ToolTip": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\appsettings.json",
+              "RelativeToolTip": "LosNeteros.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-06T23:33:20.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteBCPController.cs",
+              "DocumentMoniker": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\Controllers\\ClienteBCPController.cs",
+              "RelativeDocumentMoniker": "LosNeteros.Web\\Controllers\\ClienteBCPController.cs",
+              "ToolTip": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\Controllers\\ClienteBCPController.cs",
+              "RelativeToolTip": "LosNeteros.Web\\Controllers\\ClienteBCPController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowB4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T23:29:27.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\Views\\ClienteBCP\\Index.cshtml",
+              "RelativeDocumentMoniker": "LosNeteros.Web\\Views\\ClienteBCP\\Index.cshtml",
+              "ToolTip": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\Views\\ClienteBCP\\Index.cshtml",
+              "RelativeToolTip": "LosNeteros.Web\\Views\\ClienteBCP\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T23:28:32.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LosNeteros.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\__Fuentes\\Newhorizont\\CodigoSeguroNet\\BCPLosNeteros\\BCPLosNeteros\\LosNeteros.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LosNeteros.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T23:25:54.057Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
