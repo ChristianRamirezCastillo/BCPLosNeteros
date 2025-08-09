@@ -1,0 +1,39 @@
+﻿@model LosNeteros.Models.ClienteBCP
+
+@{
+    ViewData["Title"] = "Eliminar Cliente";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+    <h3 class="text-danger">¿Estás seguro de eliminar este cliente?</h3>
+
+    <dl class="row">
+        <dt class="col-sm-2">Nombres:</dt>
+        <dd class="col-sm-10">@Model.Nombres</dd>
+
+        <dt class="col-sm-2">Apellidos:</dt>
+        <dd class="col-sm-10">@Model.Apellidos</dd>
+
+        <dt class="col-sm-2">DNI:</dt>
+        <dd class="col-sm-10">@Model.DNI</dd>
+
+        <dt class="col-sm-2">Dirección:</dt>
+        <dd class="col-sm-10">@Model.Direccion</dd>
+
+        <dt class="col-sm-2">Número de Cuenta:</dt>
+        <dd class="col-sm-10">@Model.NumeroCuenta</dd>
+    </dl>
+
+    <form asp-action="DeleteConfirmed">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">
+            <i class="fas fa-trash-alt"></i> Confirmar Eliminación
+        </button>
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-times"></i> Cancelar
+        </a>
+    </form>
+</div>

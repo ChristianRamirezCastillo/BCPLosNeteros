@@ -1,41 +1,42 @@
-﻿
-
-@model List<LosNeteros.Web.Models.ClienteBCP>
+﻿@model IEnumerable<LosNeteros.Models.ClienteBCP>
 
 @{
     ViewData["Title"] = "Clientes BCP";
-    Layout = "_Layout"; // Asegúrate de que esto apunte a tu _Layout.cshtml
 }
 
 <div class="container mt-4">
-    <h2>Lista de Clientes BCP</h2>
+    <h2>@ViewData["Title"]</h2>
     <p>
-        <a asp-action="Create" class="btn btn-success">Crear Nuevo Cliente</a>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="fas fa-plus"></i> Nuevo Cliente
+        </a>
     </p>
 
-    <table class="table table-striped table-bordered">
-        <thead class="thead-dark">
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
             <tr>
                 <th>Nombres</th>
                 <th>Apellidos</th>
                 <th>DNI</th>
-                <th>Dirección</th>
-                <th>Número de Cuenta</th>
                 <th>Acciones</th>
+                <th>Número de Cuenta</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var cliente in Model)
+            @foreach (var item in Model)
             {
                 <tr>
-                    <td>@cliente.Nombres</td>
-                    <td>@cliente.Apellidos</td>
-                    <td>@cliente.DNI</td>
-                    <td>@cliente.Direccion</td>
-                    <td>@cliente.NumeroCuenta</td>
+                    <td>@item.Nombres</td>
+                    <td>@item.Apellidos</td>
+                    <td>@item.DNI</td>
+                    <td>****@item.NumeroCuenta.Substring(item.NumeroCuenta.Length - 4)</td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@cliente.Id" class="btn btn-warning btn-sm">Editar</a>
-                        <a asp-action="Delete" asp-route-id="@cliente.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </a>
                     </td>
                 </tr>
             }

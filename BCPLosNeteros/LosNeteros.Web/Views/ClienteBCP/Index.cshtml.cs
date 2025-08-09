@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace LosNeteros.Web.Views.ClienteBCP
+namespace LosNeteros.Views.ClienteBCP
 {
     public class IndexModel : PageModel
     {

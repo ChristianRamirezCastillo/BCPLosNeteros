@@ -1,20 +1,27 @@
-﻿using LosNeteros.Web.Models;
+﻿using LosNeteros.Datos;
+using LosNeteros.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LosNeteros.Web.Controllers
+namespace LosNeteros.Controllers
 {
     public class ClienteBCPController : Controller
     {
+        private readonly ClienteBCPRepository _repository;
 
-        // Simulación de una lista en memoria (reemplázala con tu DbContext)
-        private static List<ClienteBCP> _clientes = new List<ClienteBCP>();
-
-        // GET: ClienteBCP/Index
-        public IActionResult Index()
+        public ClienteBCPController(ClienteBCPRepository repository)
         {
-            return View(_clientes);
+            _repository = repository;
         }
 
+
+        // GET: ClienteBCP/Index
+        public async Task<IActionResult> Index()
+        {
+            var clientes = await _repository.ObtenerTodos();
+            return View(clientes);
+        }
+
+        #region create
         // GET: ClienteBCP/Create
         public IActionResult Create()
         {
@@ -24,80 +31,60 @@ namespace LosNeteros.Web.Controllers
         // POST: ClienteBCP/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(ClienteBCP cliente)
+        public async Task<IActionResult> Create(ClienteBCP cliente)
         {
             if (ModelState.IsValid)
             {
-                cliente.Id = _clientes.Count + 1;
-                _clientes.Add(cliente);
+                await _repository.Crear(cliente);
                 return RedirectToAction("Index");
             }
             return View(cliente);
         }
+        #endregion
 
+        #region edit
         // GET: ClienteBCP/Edit/5
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var cliente = _clientes.FirstOrDefault(c => c.Id == id);
-            if (cliente == null)
-            {
-                return NotFound();
-            }
+            var cliente = await _repository.ObtenerPorId(id);
+            if (cliente == null) return NotFound();
             return View(cliente);
         }
 
         // POST: ClienteBCP/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, ClienteBCP cliente)
+        public async Task<IActionResult> Edit(int id, ClienteBCP cliente)
         {
-            if (id != cliente.Id)
-            {
-                return NotFound();
-            }
+            if (id != cliente.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
-                var clienteExistente = _clientes.FirstOrDefault(c => c.Id == id);
-                if (clienteExistente == null)
-                {
-                    return NotFound();
-                }
-
-                clienteExistente.Nombres = cliente.Nombres;
-                clienteExistente.Apellidos = cliente.Apellidos;
-                clienteExistente.DNI = cliente.DNI;
-                clienteExistente.Direccion = cliente.Direccion;
-                clienteExistente.NumeroCuenta = cliente.NumeroCuenta;
-
+                await _repository.Actualizar(cliente);
                 return RedirectToAction("Index");
             }
             return View(cliente);
         }
+        #endregion
 
+        #region delete
         // GET: ClienteBCP/Delete/5
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var cliente = _clientes.FirstOrDefault(c => c.Id == id);
-            if (cliente == null)
-            {
-                return NotFound();
-            }
+            var cliente = await _repository.ObtenerPorId(id);
+            if (cliente == null) return NotFound();
             return View(cliente);
         }
 
         // POST: ClienteBCP/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var cliente = _clientes.FirstOrDefault(c => c.Id == id);
-            if (cliente != null)
-            {
-                _clientes.Remove(cliente);
-            }
+            await _repository.Eliminar(id);
             return RedirectToAction("Index");
         }
+        #endregion
 
     }
 }

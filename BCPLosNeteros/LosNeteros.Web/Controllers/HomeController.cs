@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using LosNeteros.Web.Models;
+using LosNeteros.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LosNeteros.Web.Controllers
+namespace LosNeteros.Controllers
 {
     public class HomeController : Controller
     {

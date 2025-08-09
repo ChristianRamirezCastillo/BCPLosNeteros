@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace LosNeteros.Web.Models
+namespace LosNeteros.Models
 {
     public class ClienteBCP
     {

@@ -1,4 +1,4 @@
-namespace LosNeteros.Web.Models
+namespace LosNeteros.Models
 {
     public class ErrorViewModel
     {

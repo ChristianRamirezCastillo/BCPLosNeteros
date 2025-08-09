@@ -1,12 +1,18 @@
+using LosNeteros.Datos;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Identity.Web;
 using Microsoft.IdentityModel.Logging;
+
 var builder = WebApplication.CreateBuilder(args);
 
 if (builder.Environment.IsDevelopment())
 {
     IdentityModelEventSource.ShowPII = true;
 }
+
+builder.Services.AddScoped<DapperContext>();
+builder.Services.AddScoped<ClienteBCPRepository>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
