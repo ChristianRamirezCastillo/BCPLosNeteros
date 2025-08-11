@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using Azure.Identity;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace LosNeteros.Datos
@@ -11,7 +12,7 @@ namespace LosNeteros.Datos
         public DapperContext(IConfiguration configuration)
         {
             _configuration = configuration;
-            _connectionString = _configuration.GetConnectionString("DefaultConnection");
+            _connectionString = _configuration.GetConnectionString("SqlConnectionString");
         }
 
         public IDbConnection CreateConnection() => new SqlConnection(_connectionString);
